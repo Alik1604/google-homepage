@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+body{ height:100%; display: flex; flex-direction: column; margin: 0px; }
 header {
-justify-content:flex-end;  
 display:flex;
+justify-content:flex-end;  
 align-items: center;
+width: 100%;
 }
 a {
 margin: 0.5%;
@@ -24,8 +26,23 @@ border-radius: 50%;
 }
 #logo{
     display:flex;
-    justify-content: center;  
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 5%;
 }
+#google-logo{width: 272px;}
+#form_main{
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;   
+}
+footer{display: flex; background-color: aliceblue; justify-content: space-between; margin-top:20%;}
+span{display: flex; margin: 1%; }
+#span_1{
+ 
+}
+
 </style>
 <head>
     <meta charset="UTF-8">
@@ -41,10 +58,12 @@ border-radius: 50%;
         <img class="header_icon icon2" src="icons/kocho.jpeg" alt="">
     </header>   
     <div id="logo">
-        <img src="icons/google-logo.png" alt="">
-        <form action="">
-        <img src="icons/icon2.png" alt="">
-        <input type="text">
+        <img src="icons/google-logo.png" id="google-logo" alt="">
+        <form id="form_main" action="">
+            <div>
+                <img src="icons/icon2.png" alt="">
+                <input type="text">
+            </div>
             <div>
                 <button>Google searche</button>
                 <button>I'm Felling Lucky</button>
@@ -52,13 +71,13 @@ border-radius: 50%;
         </form>
     </div>
     <footer>
-       <span>
-            <div>Advertising</div>
+       <span id="span_1">
+            <a>Advertising</a>
             <div>Business</div>
             <div>About</div>
             <div>How seache works</div>
         </span>
-        <span>
+        <span id="span_2">
             <div>Privacy</div>
             <div>Terms</div>
             <div>Settings</div>
