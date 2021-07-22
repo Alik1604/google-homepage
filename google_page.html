@@ -25,33 +25,56 @@ height:40px;
 border-radius: 50%; 
 }
 #logo{
-    display:flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    margin-top: 5%;
+    display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-start;
+margin-top: 12rem;  
 }
-#google-logo{width: 272px;}
+#google-logo{width: 272px;margin-bottom: 1%;}
 #form_main{
     display:flex;
-    flex-direction: column;
-    justify-content:flex-end;   
+    flex-direction: row;
+    justify-content:flex-end;      
 }
 footer{
     display: flex; 
-    background-color: aliceblue; 
+    background-color:rgb(241, 241, 241); 
     justify-content: space-between; 
     position: fixed;
     bottom: 0;
     left: 0;
-    padding: 10px;
+   
     width: 100%;
+    font-size: 15px;
 }
-span{display: flex; margin: 1%; }
-#span_1{
- 
+span{display: flex; margin: 1%; align-items:baseline; }
+#span_1{ 
+   display: flex; 
+   justify-content: space-between;
 }
-
+input{
+    outline: none;
+    border: none;
+    display: flex;
+    flex-shrink: 0;
+}
+#m_s{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    width: 580px;
+    background-color: white;
+    border:0.1px solid gray ;  
+}
+#buttons{
+    margin-top: 1%;
+}
+#sp1{
+    width: auto;
+    margin: 7.5px;
+}
 </style>
 <head>
     <meta charset="UTF-8">
@@ -69,27 +92,30 @@ span{display: flex; margin: 1%; }
     <div id="logo">
         <img src="icons/google-logo.png" id="google-logo" alt="">
         <form id="form_main" action="">
-            <div>
+          
+            <div id="m_s">
                 <img src="icons/icon2.png" alt="">
                 <input type="text">
+                <img src="icons/microfone.png" alt="">
             </div>
-            <div>
-                <button>Google searche</button>
-                <button>I'm Felling Lucky</button>
-            </div>
+           
         </form>
+        <div id="buttons">
+            <button>Google searche</button>
+            <button>I'm Felling Lucky</button>
+        </div>
     </div>
     <footer>
        <span id="span_1">
-            <a>Advertising</a>
-            <div>Business</div>
-            <div>About</div>
-            <a>How searche works</a>
+            <a id="sp1"href="#">Advertising</a>
+            <a id="sp1"href="#">Business</a>
+            <a id="sp1"href="#">About</a>
+            <a id="sp1" href="#">How searche works</a>
         </span>
         <span id="span_2">
-            <div>Privacy</div>
-            <div>Terms</div>
-            <div>Settings</div>
+            <a id="sp1"href="#">Privacy</a>
+            <a id="sp1"href="#">Terms</a>
+            <a id="sp1"href="#">Settings</a>
         </span> 
     </footer>
 </body>
